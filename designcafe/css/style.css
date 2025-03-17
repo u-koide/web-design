@@ -38,66 +38,65 @@ main{
   padding: 0 10px;
     }
 
-.message{
-  max-width: 52%;
+.hero{
+  max-width: 1000px;
   margin: 0 auto;
   flex-direction: column;
 }
 
-.top-message-1{
-  font-size: 1.56vw;
+.hero-en{
+  font-size: 30px;
   line-height: 3.9;
   text-align: center;
   padding-top: 3%;
 }
 
-.top-message-2{
-  font-size: 4.22vw;
+.hero-ja{
+  font-size: 81px;
   line-height: 1.17;
   text-align: center;
   padding: 1.5%;
 }
 
-.top-message-3{
-  font-size: 1.2vw;
+.hero-text{
+  font-size: 23px;
   line-height: 1.65;
   text-align: center;
   margin-bottom: 4.8%;
 }
 
 #about-us{
-  max-width: 52%;
+  max-width: 1000px;
   margin: 0 auto;
   padding-top: 3%;
   display: flex;
+  align-items: center;
 }
 
-.about-us-image{
-  width: 50%;
-  height: auto;
-  margin-right: 8%;
+img.title-image{
+  width: auto;
+  height: 78px;
 }
 
 .about-us-inner{
   width: 50%;
+  padding-left: 8%;
+  box-sizing: border-box;
 }
 
 .about-us-title{
   width: 54.4%;
   height: auto;
-  margin-top: 12%;
   margin-bottom: 10%;
 }
 
 .about-us-comment1{
-  font-size: 2.29vw;
+  font-size: 44px;
   line-height: 1.39;
-  width: 82%;
-  height: auto;
 }
 
 .about-us-comment2{
-  font-size: 0.83vw;
+  font-size: 16px;
   line-height: 1.63;
   margin-top: 4.6%;
   margin-bottom: 9.6%;
@@ -110,7 +109,7 @@ main{
 }
 
 #menu{
-  max-width: 52%;
+  max-width: 1000px;
   margin: 2.93% auto ;
 }
 
@@ -128,14 +127,14 @@ img.menu-image{
 
 .menu-list{
   color: #d30202;
-  font-size: 1.98vw;
+  font-size: 38px;
   margin-top: -5%;
   margin-bottom: 2%;
   margin-left: 1%;
 }
 
 .menu-comment{
-  font-size: 0.89vw;
+  font-size: 17px;
   line-height: 1.47;
 }
 
@@ -161,7 +160,7 @@ height: auto;
 }
 
 #event{
-  max-width: 52%;
+  max-width: 1000px;
   margin: 2.93% auto ;
 }
 
@@ -174,17 +173,21 @@ height: auto;
 .event-container{
   border: 2px solid #4f260b;
   background-color: #fff;
-  padding: 2% 7%;
+  padding: 2% 10%;
 }
 
-.event-table{
-width: 90%;
-margin: 0 auto;
+ul.event-list{
+  align-items: center;
+  margin: 0 auto;
+}
+
+li.event-list{
+  display: flex;
 }
 
 .event-date,.event-contents{
-font-size: 1.2vw;
-padding: 1% 2%;
+font-size: 23px;
+margin: 5px 30px;
 }
 
 #access{
@@ -213,7 +216,7 @@ footer{
 }
 
 .footer-contents{
-width: 52%;
+max-width: 1000px;
 margin: 0 auto;
 display: flex;
 justify-content: flex-start;
@@ -227,7 +230,7 @@ justify-content: flex-start;
 
 .fotter-list{
   color: black;
-  font-size: 1.04vw;
+  font-size: 20px;
   margin: 2% 0;
 }
 
@@ -238,13 +241,13 @@ justify-content: flex-start;
 
 small{
   color: black;
-  font-size: 0.83vw;
+  font-size: 16px;
 }
 
 .to-top{
   position: fixed;
-  right: 15.6%;
-  bottom: 7.57%;
+  right: 20px;
+  bottom: 20px;
 }
 
 .to-top-image{
