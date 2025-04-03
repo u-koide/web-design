@@ -10,6 +10,7 @@
   position: absolute;
   width: 100%;
   box-sizing: border-box;
+  z-index: 10;
 }
 
 .header_nav ul {
@@ -65,6 +66,10 @@ main{
   margin-bottom: 4.8%;
 }
 
+.hero-text-br{
+  display: none;
+}
+
 #about-us{
   max-width: 1000px;
   margin: 0 auto;
@@ -87,19 +92,19 @@ img.title-image{
 .about-us-title{
   width: 54.4%;
   height: auto;
-  margin-bottom: 10%;
+  /* margin-bottom: 10%; */
 }
 
 .about-us-comment1{
   font-size: 44px;
   line-height: 1.39;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .about-us-comment2{
   font-size: 16px;
   line-height: 1.63;
-  margin-top: 4.6%;
-  margin-bottom: 9.6%;
 }
 
 .menu-title{
@@ -110,7 +115,7 @@ img.title-image{
 
 #menu{
   max-width: 1000px;
-  margin: 2.93% auto ;
+  margin: 5% auto ;
 }
 
 .menu-container{
@@ -144,9 +149,10 @@ img.menu-image{
 }
 
 .gallery-title{
-  width: 12.8%;
-  height: auto;
+  /* width: 12.8%;
+  height: auto; */
   margin: 1.3% auto;
+  text-align: center;
 }
 
 .gallery-image-container{
@@ -154,10 +160,10 @@ img.menu-image{
   justify-content: center;
 }
 
-img.gallery-image{
+/* img.gallery-image{
 max-width: 20%;
 height: auto;
-}
+} */
 
 #event{
   max-width: 1000px;
@@ -196,9 +202,10 @@ margin: 5px 30px;
 }
 
 .access-title{
-  width: 11%;
-  height: auto;
+  /* width: 11%;
+  height: auto; */
   margin: 2.24% auto 1.22%;
+  text-align: center;
 }
 
 iframe{
@@ -253,3 +260,232 @@ small{
 .to-top-image{
   width: 125px;
 }
+
+.hamburger,
+.header_nav-sp{
+  display: none;
+}
+
+/* 1100px以下 */
+@media screen and (max-width: 1100px){
+.hamburger{
+  display: block;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  top:20px;
+  right: 20px;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.hamburger span{
+  position: absolute;
+  width: 33px;
+  height: 2px;
+  background-color: #fff;
+  top: 16px;
+  left: 0px;
+  transition: 0.4s;
+}
+
+.hamburger span::before,
+.hamburger span::after{
+  position: absolute;
+  content: "";
+  width: 33px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+.hamburger span::before{
+  top: -15px;
+}
+
+.hamburger span::after{
+  bottom: -15px;
+}
+
+.open span{
+  background-color: transparent;
+}
+
+/* openがついたときに✖にする */
+.open span::before{
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.open span::after{
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+.header_nav-sp{
+  position: absolute;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000a5;
+}
+
+.header_nav-sp ul{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header_nav-sp a{
+  color: #fff;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+      "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.header_nav{
+  display: none;
+}
+
+/* hwro文、about us　文字サイズ変換 */
+.hero-ja{
+  font-size: 70px;
+}
+
+.about-us-comment1{
+  font-size: 35px;
+}
+}
+  
+/* 767px以下 */
+@media screen and (max-width: 767px){
+
+.hero-en{
+  font-size: 17px;
+}
+
+.hero-ja{
+  font-size: 38px;
+}
+
+.hero-text{
+  font-size: 16px;
+}
+
+.hero-text-br{
+  display: block;
+}
+
+img.title-image{
+  width: auto;
+  height: 45px;
+}
+
+.about-us-title,
+.menu-title,
+.gallery-title,
+.event-title,
+.access-title{
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+/* about-us 設定 */
+
+.about-us-comment1{
+  font-size: 36px;
+}
+
+#about-us{
+  max-width: 767px;
+  display: block;
+}
+
+.about-us-inner{
+  width: 100%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+/* menu 設定 */
+.menu-container{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-contents{
+  margin-bottom: 10%;
+}
+
+/* event 設定 */
+.event-container{
+  padding: 0 5%;
+}
+
+li.event-list{
+  display: block;
+  margin: 5% auto;
+}
+
+p.event-contents{
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+/* access 設定 */
+iframe{
+  width: 100%;
+  height: 200px;
+}
+
+.footer-logo{
+  width: auto;
+  height: 50px;
+}
+
+.footer-contents{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-container{
+  width: 80%;
+  margin: 5% auto;
+}
+
+.fotter-list-container{
+  width: 80%;
+  padding: 0;
+  margin: 5% auto;
+}
+
+.copyright{
+  margin: 5% auto;
+}
+}
+
+
+/* slick */
+.slick-dots{
+  bottom: 10px;
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before{
+  color: #fff;
+}
+
+/* 無効化したかったのですが、出来ませんでした。
+.slick-dotted .slick-slider{
+  margin-bottom: 0px;
+} */
+
