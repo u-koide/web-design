@@ -196,6 +196,10 @@ font-size: 23px;
 margin: 5px 30px;
 }
 
+p.event-contents{
+  border-bottom: 1px solid;
+}
+
 #access{
   max-width: 100%;
   margin: 0 auto;
@@ -209,6 +213,7 @@ margin: 5px 30px;
 }
 
 iframe{
+  aspect-ratio: 376/191;
   width: 100%;
   filter: grayscale(100%) invert(92%) contrast(83%);
 }
@@ -363,6 +368,9 @@ small{
   
 /* 767px以下 */
 @media screen and (max-width: 767px){
+main{
+  padding: 0;
+}
 
 .hero-en{
   font-size: 17px;
@@ -397,7 +405,6 @@ img.title-image{
 }
 
 /* about-us 設定 */
-
 .about-us-comment1{
   font-size: 36px;
 }
@@ -405,6 +412,15 @@ img.title-image{
 #about-us{
   max-width: 767px;
   display: block;
+  position: relative;
+  padding-top: 45px;
+}
+
+h2.about-us-title{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
 }
 
 .about-us-inner{
@@ -426,6 +442,10 @@ img.title-image{
 }
 
 /* event 設定 */
+#event{
+  padding: 0 20px;
+}
+
 .event-container{
   padding: 0 5%;
 }
@@ -441,10 +461,19 @@ text-overflow: ellipsis;
 white-space: nowrap;
 }
 
+.event-date,.event-contents{
+  font-size: 16px;
+}
+
+/* Gallery設定 */
+.lb-data .lb-number{
+  display: none !important;
+}
+
 /* access 設定 */
 iframe{
   width: 100%;
-  height: 200px;
+  height: 100%;
 }
 
 .footer-logo{
@@ -473,6 +502,10 @@ iframe{
 }
 }
 
+.to-top-image{
+  width: 100px;
+}
+
 
 /* slick */
 .slick-dots{
@@ -484,8 +517,7 @@ iframe{
   color: #fff;
 }
 
-/* 無効化したかったのですが、出来ませんでした。
-.slick-dotted .slick-slider{
+.slick-dotted.slick-slider{
   margin-bottom: 0px;
-} */
+}
 
