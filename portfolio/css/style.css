@@ -1,0 +1,424 @@
+@charset "utf-8";
+
+body{
+  background-color: #3d563e;
+}
+
+p{
+  font-family:'Yu Gothic';
+}
+
+/* header */
+.nav ul{
+  display: flex;
+  margin: 1.5% auto;
+  width: 60%;
+}
+
+.nav li{
+  border: 2px solid #e6dfcb;
+  border-radius: 50px;
+  width: 20%;
+  padding: 10px 17px;
+  margin: 0 3.5%;
+}
+
+.nav img{
+  width: auto;
+  height: 20px;
+  display: block;
+  margin: auto;
+}
+
+/* メインビジュアル */
+.main-visual-container-all{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin: 2.4% 2.4% 2.4% 0;
+}
+
+.main-visual-container-beige{
+  background-color: #e6dfcb;
+  border-radius: 0 9999px 9999px 0;
+  padding: 12% 20%;
+  width: 30%;
+  position: absolute;
+  z-index: 1;
+}
+
+.main-visual-title-container{
+  width: 350px;
+  height: 160px;
+}
+
+.main-visual-title{
+  width: auto;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.main-visual-title-sub{
+  color: #3d563e;
+  font-size: 40px;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 6px;
+  text-align: center;
+}
+
+/* ★書き出し画像が内側に余白入っている */
+.title-shadow{
+  width: auto;
+  height: 500px;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+/* WORKS */
+#works{
+  background-color: #e6dfcb;
+  border-radius: 50px;
+  max-width: 1200px;
+  height: 810px;
+  margin: 10% auto;
+  position: relative;
+}
+
+.works-title-container{
+  margin: 0 auto;
+  padding: 6%;
+}
+
+.works-title{
+  width: auto;
+  height: 60px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.works-title-sub{
+  color: #3d563e;
+  font-size: 30px;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  text-align: center;
+}
+
+.works-contents-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 8%;
+}
+
+.works-contents-category{
+  background-color: #3d563e;
+  color: #e6dfcb;
+  font-size: 14px;
+  font-family: 'Noto Sans JP', sans-serif;
+  border-radius: 50px;
+  margin-bottom: 5%;
+  margin-left: 8%;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  width: 100px;
+  text-align: center;
+}
+
+.works-contents-title{
+  color: #e6dfcb;
+  font-size: 14px;
+  margin-top: -15%;
+  margin-left: 10%;
+}
+
+.works-btn-more{
+  background-color: #3d563e;
+  color: #e6dfcb;
+  font-size: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  border-radius: 50px;
+  padding-top: 20px;
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  bottom: 6%;
+  right: 6%;
+}
+
+/* SKILL */
+#skill{
+  max-width: 1200px;
+  margin: 10% auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-title{
+  width: auto;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.skill-title-sub{
+  color: #e6dfcb;
+  font-size: 30px;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+}
+
+/* SKILL共通箇所の設定 */
+.skill-container{
+  width: 35%;
+  height: 400px;
+}
+
+.skill-contents-title{
+  color: #e6dfcb;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: -1%;
+  margin-left: 10%;
+}
+
+.skill-box{
+  background-color: #e6dfcb;
+  border-radius: 50px;
+  height: 70%;
+  padding: 10%;
+}
+
+.skill-item-box{
+  display: flex;
+  column-gap: 15px;
+}
+
+.skill-item{
+  background-color: #3d563e;
+  color: #e6dfcb;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 90px;
+}
+
+.skill-text{
+  color: #3d563e;
+  font-size: 16px;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  margin-top: 10%;
+  line-height: 1.5;
+}
+
+/* ABOUT */
+#about{
+  max-width: 83%;
+  height: 700px;
+  margin: 10% auto;
+  position: relative;
+}
+
+.about-title-container{
+  width: 273px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.about-title{
+  width: auto;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.about-title-sub{
+  color: #e6dfcb;
+  font-size: 30px;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  text-align: right;
+}
+
+/* ABOUT文字部分 */
+.about-text-container{
+  width: 90%;
+  position: absolute;
+  top: 42%;
+  left: 15%;
+  z-index: 3;
+  display: flex;
+  column-gap: 10%;
+}
+
+/* 名前 */
+.about-text-name-container{
+  top: 10%;
+  left: 10%;
+}
+
+.about-text-name{
+  color: #3d563e;
+  font-size: 50px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-text-name-sub{
+  color: #3d563e;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding-left: 5px;
+}
+
+/* 紹介文 */
+.about-text{
+  color: #3d563e;
+  font-size: 16px;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  line-height: 1.5;
+  width: 500px;
+  padding-top: 7px;
+}
+
+/* ABOUT背景（ベージュ） */
+.about-back-beige{
+  width: 92%;
+  position: absolute;
+  z-index: 2;
+}
+
+/* ABOUT背景（影） */
+.about-back-shadow{
+  opacity: 0.3;
+  position: absolute;
+  top: 4%;
+  z-index: 1;
+}
+
+.about-btn-more{
+  background-color: #3d563e;
+  color: #e6dfcb;
+  font-size: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  border-radius: 50px;
+  padding-top: 20px;
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  z-index: 4;
+  bottom: 23%;
+  right: 22%;
+}
+
+
+/* CONTACT */
+#contact{
+  background-color: #e6dfcb;
+  width:1200px;
+  height:600px;
+  border-radius:600px 600px 0 0;
+  margin: 10% auto;
+  position: relative;
+}
+
+.contact-title{
+  width: auto;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 25%;
+  left: 34%;
+}
+
+.contact-text{
+  color: #3d563e;
+  font-size: 20px;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  line-height: 1.5;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 52%;
+}
+
+.contact-btn{
+  background-color: #3d563e;
+  color: #e6dfcb;
+  font-size: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  border-radius: 50px;
+  padding-top: 20px;
+  width: 540px;
+  height: 40px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 15%;
+  left: 28%;
+}
+
+/* footer */
+.footer-container{
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.footer-title-container{
+  margin: 0 auto 5%;
+}
+
+.footer-title{
+  width: auto;
+  height: 70px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.footer-title-sub{
+  color: #e6dfcb;
+  font-size: 35px;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 6px;
+  text-align: center;
+}
+
+/* footer_navはheader_navと共用 */
+
+.instagram_icon{
+  width: auto;
+  height: 50px;
+  display: block;
+  margin: 4% auto;
+}
+
+.copyright{
+  color: #e6dfcb;
+  text-align: center;
+  margin: 3% auto;
+}
+
+
+/* 質問
+・ファーストビューのグラデ背景部分が書き出しすると余白ができてしまいました。
+こちら、森田先生に解決方法を確認中なので、解決後画像差し替えます。
+
+・WORKSは縮小すると、各画像の間隔がつぶれてしまうのですが、これはjustify-content: space-around;を使わずに
+column-gap: ;を用いた方が良いのでしょうか。
+
+・SKILLの「java script」の2行目が入りませんでした。これはフォントサイズで調整すべきでしょうか。
+
+・ABOUT部分は縮小すると配置が崩れてしまいます。こちらの解決方法を教えて頂きたいです。
+
+*/
