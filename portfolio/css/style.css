@@ -371,7 +371,7 @@ p{
 .footer-container{
   max-width: 1200px;
   margin: 0 auto;
-
+  position: relative;
 }
 
 .footer-title-container{
@@ -405,20 +405,81 @@ p{
 
 .copyright{
   color: #e6dfcb;
+  font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
   margin: 3% auto;
 }
 
+/* ページトップリンク */
+.to-top-container{
+  position: absolute;
+  bottom: 150px;
+  right: 10px;
+}
 
-/* 質問
-・ファーストビューのグラデ背景部分が書き出しすると余白ができてしまいました。
-こちら、森田先生に解決方法を確認中なので、解決後画像差し替えます。
+.to-top {
+  background-color: #e6dfcb;
+  width: 80px; /* 適当な箱を作るための幅 */
+  height: 80px; /* 適当な箱を作るための高さ */
+  border-radius: 50%;
+  position: relative; /* 基準位置とする */
 
-・WORKSは縮小すると、各画像の間隔がつぶれてしまうのですが、これはjustify-content: space-around;を使わずに
-column-gap: ;を用いた方が良いのでしょうか。
+}
 
-・SKILLの「java script」の2行目が入りませんでした。これはフォントサイズで調整すべきでしょうか。
+.to-top::before,
+.to-top::after {
+  content: ""; /* 疑似要素に指定必須 */
+  width: 20px; /* 線の長さを指定 */
+  height: 4px; /* 線の幅を指定 */
+  display: inline-block; /* インラインブロックにする */
+  border-radius: 2px; /* 線を角丸にする */
+  background: #3d563e;   /* 線の色を指定 */
+  position: absolute; /* 相対位置に指定 */
+  right: 10px; /* 右から10pxの位置に配置 */
+}
 
-・ABOUT部分は縮小すると配置が崩れてしまいます。こちらの解決方法を教えて頂きたいです。
+.to-top::before {
+  top: 40px;
+  left: 24px;
+  transform: rotate(-45deg); 
+}
+.to-top::after {
+  top: 40px;
+  right: 24px;
+  transform: rotate(45deg); 
+}
 
-*/
+/* 以下、about.html */
+.about-container{
+  background-color: #e6dfcb;
+  background-image: url(../images/about_back_top.png);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 2000px;
+
+}
+
+.about_page-title-container{
+
+}
+
+.about_page-title{
+  width: auto;
+  height: 60px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.about_page-title-sub{
+  color: #3d563e;
+  font-size: 30px;
+  font-family: fot-tsukuardgothic-std, sans-serif;
+  text-align: center;
+}
+
+
+/* 以下、works.html */
+
+
+
+

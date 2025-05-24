@@ -4,17 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UTAKO portfolio</title>
+  <title>UTAKO portfolio-about</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <header id="home">
+
+  <header id="home_about">
     <nav class="nav">
       <ul>
         <li>
-          <a href="#home"><img src="./images/home_header_beige.svg" alt="HOME"></a>
+          <a href="./index.html#home"><img src="./images/home_header_beige.svg" alt="HOME"></a>
         </li>
         <li>
           <a href="#about"><img src="./images/about_header_beige.svg" alt="ABOUT"></a>
@@ -27,19 +28,19 @@
         </li>
       </ul>
     </nav>
-
-    <div class="main-visual-container-all">
-      <div class="main-visual-container-beige">
-        <h1 class="main-visual-title-container">
-          <img src="./images/title_top.svg" alt="title" class="main-visual-title">
-          <p class="main-visual-title-sub">portfolio</p>
-        </h1>
-      </div>
-      <img src="./images/home_top_backshadow_img.png" alt="title背景" class="title-shadow">
-    </div>
   </header>
 
   <main>
+
+    <div class="about-container">
+      <h2 class="about_page-title-container">
+        <img src="./images/about_titie.png" alt="ABOUT" class="about_page-title">
+        <p class="about_page-title-sub">作品一覧</p>
+      </h2>
+
+    </div>
+
+
     <!-- WORKS -->
     <div id="works">
       <h2 class="works-title-container">
@@ -94,7 +95,7 @@
           <div class="skill-item-box">
             <p class="skill-item">HTML</p>
             <p class="skill-item">CSS</p>
-            <p class="skill-item">JS</p>
+            <p class="skill-item">Java<br>Script</p>
           </div>
           <p class="skill-text">
             デザインカンプを基に、HTML・CSSで再現します。JavaScriptを用い動きを加えたものや、各デバイスに合わせたレスポンシブなコーディングにも対応いたします。
@@ -165,7 +166,7 @@
         <small>&copy; 2025 Utako portfolio</small>
       </div>
       <div class="to-top-container">
-        <a href="#home">
+        <a href="#home_about">
           <div class="to-top"></div>
         </a>
       </div>
@@ -176,15 +177,10 @@
 
 </html>
 
-<!-- /* 質問
-・ファーストビューのグラデ背景部分が書き出しすると余白ができてしまいました。
-こちら、森田先生に解決方法を確認中なので、解決後画像差し替えます。
 
-・WORKSは縮小すると、各画像の間隔がつぶれてしまうのですが、これはjustify-content: space-around;を使わずに
-column-gap: ;を用いた方が良いのでしょうか。
+<!-- aboutページの質問 
+・ABOUT上部の波状の背景をどのように配置すれば良いかわかりませんでした。
 
-・SKILLの「java script」の2行目が入りませんでした。これはフォントサイズで調整すべきでしょうか。
 
-・ABOUT部分は縮小すると配置が崩れてしまいます。こちらの解決方法を教えて頂きたいです。
-
-*/ -->
+・indexと同じcssファイルを使用する際、背景色が
+-->
