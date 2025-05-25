@@ -8,6 +8,12 @@ p{
   font-family:'Yu Gothic';
 }
 
+/* 
+タイトル40px
+サブタイトル25px
+ */
+
+
 /* header */
 .nav ul{
   display: flex;
@@ -81,8 +87,8 @@ p{
 #works{
   background-color: #e6dfcb;
   border-radius: 50px;
-  max-width: 1200px;
-  height: 810px;
+  max-width: 1000px;
+  height: 700px;
   margin: 10% auto;
   position: relative;
 }
@@ -94,23 +100,22 @@ p{
 
 .works-title{
   width: auto;
-  height: 60px;
+  height: 40px;
   display: block;
   margin: 0 auto 10px;
 }
 
 .works-title-sub{
   color: #3d563e;
-  font-size: 30px;
+  font-size: 25px;
   font-family: fot-tsukuardgothic-std, sans-serif;
   text-align: center;
 }
 
 .works-contents-container{
-  width: 100%;
+  max-width: 1000px;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 8%;
 }
 
 .works-contents-category{
@@ -125,6 +130,11 @@ p{
   padding-bottom: 3px;
   width: 100px;
   text-align: center;
+}
+
+.works-contents-item{
+  max-width: 300px;
+  height: auto;
 }
 
 .works-contents-title{
@@ -522,10 +532,9 @@ p{
   height: 400px;
 }
 
-/* ABOUT内likes */
+/* ABOUT内likes ！グリッドレイアウトに変更する！*/
 .likes-wrapper{
   max-width: 1000px;
-  height: 600px;
   margin: 0 auto;
   display: flex;
 }
@@ -544,39 +553,51 @@ p{
   padding-left: 30px;
 }
 
-.likes-left{
-  width: 617px;
-  margin: 0 17px;
+
+/* グリッドレイアウト */
+.likes-container{
+  display: grid;
+  grid-template-rows: 300px 300px;
+  grid-template-columns: 300px 300px 300px;
+  row-gap: 17px;
+  column-gap: 17px;
+  margin-left: 17px;
 }
 
-/* <!-- LIKES左側の上段2ブロック --> */
-.likes-left-top{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 17px;
-}
-
-.likes-left-top-container{
+.likes-1{
   background-color: #e6dfcb;
-  width: 300px;
-  height: 300px;
   border-radius: 40px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
-/* LIKES左側の下段1ブロック */
-.likes-left-bottom-container{
+.likes-2{
   background-color: #e6dfcb;
-  width: 100%;
-  height: 280px;
-  border-radius: 50px;
+  border-radius: 40px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
-/* LIKES右側1ブロック */
-.likes-right{
+.likes-3{
   background-color: #e6dfcb;
-  width: 300px;
-  height: 100%;
-  border-radius: 50px;
+  border-radius: 40px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.likes-4{
+  background-color: #e6dfcb;
+  border-radius: 40px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 /* LIKES各項目のタイトルと本文（共通） */
@@ -607,7 +628,7 @@ p{
 
 .works_page-title{
   width: auto;
-  height: 60px;
+  height: 40px;
   display: block;
   margin-right: auto;
   margin-bottom: 10px;
@@ -615,12 +636,12 @@ p{
 
 .works_page-title-sub{
   color: #e6dfcb;
-  font-size: 30px;
+  font-size: 25px;
   font-family: fot-tsukuardgothic-std, sans-serif;
 }
 
 .works-category-container{
-  max-width: 1000px;
+  width: 1000px;
   margin: 95px auto;
   display: flex;
   column-gap: 40px;
@@ -629,11 +650,20 @@ p{
 .works-category{
   background-color: #e6dfcb;
   color: #3d563e;
-  font-size: 14px;
+  font-size: 20px;
   font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
   border-radius: 50px;
-  padding-top: 2px;
-  padding-bottom: 3px;
-  width: 100px;
+  padding-top: 11px;
+  width: 200px;
+  height: 36px;
   text-align: center;
+}
+
+.works_page-contents-container{
+  background-color: #e6dfcb;
+  border-radius: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 90px 0;
 }
