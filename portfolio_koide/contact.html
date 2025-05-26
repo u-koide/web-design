@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UTAKO portfolio-contact</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header id="home">
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="./index.html"><img src="./images/home_header_beige.svg" alt="HOME" /></a>
+        </li>
+        <li>
+          <a href="./about.html"><img src="./images/about_header_beige.svg" alt="ABOUT" /></a>
+        </li>
+        <li>
+          <a href="./works.html"><img src="./images/works_header_beige.svg" alt="WORKS" /></a>
+        </li>
+        <li>
+          <a href="contact.html"><img src="./images/contact_home_beige.svg" alt="CONTACT" /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="contact_page-top">
+      <h2 class="contact_page-title-container">
+        <img src="./images/contact_title.svg" alt="CONTACT" class="contact_page-title" />
+        <p class="works_page-title-sub">お問い合わせ</p>
+      </h2>
+    </div>
+
+    <!-- 問い合わせフォーム部分 -->
+    <div class="contact-wrapper">
+      <div class="contact-text-wrapper">
+        <p class="contact_page-text">
+          当サイトにお越しいただきありがとうございます。<br>
+          ご依頼・ご相談は以下のフォームから承っております。<br>
+          小さなことでも、是非お気軽にお問い合わせください。<br>
+          内容を確認後、折り返しご連絡いたします。
+        </p>
+      </div>
+
+      <!-- 問い合わせフォーム部分 -->
+      <form action="" method="" name="contact-form">
+        <div class="contact-form-container">
+          <div class="contact-form-inner">
+
+            <div class="required">
+              <label>お名前</label>
+            </div>
+            <input id="name-id" type="text" name="name">
+
+            <div class="optional">
+              <label>会社名</label>
+            </div>
+            <input id="company-name" type="text" name="company-name">
+
+            <div class="required">
+              <label>メールアドレス</label>
+            </div>
+            <input id="mail-adress-id" type="email" name="mail-adress">
+
+            <div class="required">
+              <label>お問い合わせ内容</label>
+            </div>
+            <textarea name="contact"></textarea>
+
+            <p class="privacy-policy">
+              個人情報の取り扱いについては、プライバシーポリシーをご確認ください。
+            </p>
+
+            <p class="send-btn">
+              <input type="submit" value="送信する">
+            </p>
+
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-title-container">
+        <img src="./images/title_footer.svg" alt="title" class="footer-title" />
+        <p class="footer-title-sub">portfolio</p>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="./index.html"><img src="./images/home_header_beige.svg" alt="HOME" /></a>
+          </li>
+          <li>
+            <a href="./about.html"><img src="./images/about_header_beige.svg" alt="ABOUT" /></a>
+          </li>
+          <li>
+            <a href="./works.html"><img src="./images/works_header_beige.svg" alt="WORKS" /></a>
+          </li>
+          <li>
+            <a href="contact.html"><img src="./images/contact_home_beige.svg" alt="CONTACT" /></a>
+          </li>
+        </ul>
+      </nav>
+      <img src="./images/instagram_icon.png" alt="instagram" class="instagram_icon" />
+      <div class="copyright">
+        <small>&copy; 2025 Utako portfolio</small>
+      </div>
+      <div class="to-top-container">
+        <a href="#home">
+          <div class="to-top"></div>
+        </a>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </footer>
+</body>
+
+</html>
