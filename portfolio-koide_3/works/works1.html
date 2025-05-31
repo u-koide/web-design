@@ -5,13 +5,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UTAKO portfolio-works</title>
-  <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
   <header id="home">
     <nav class="nav">
+      <ul>
+        <li>
+          <a href="../index.html"><img src="../images/home_header_beige.svg" alt="HOME" /></a>
+        </li>
+        <li>
+          <a href="../about.html"><img src="../images/about_header_beige.svg" alt="ABOUT" /></a>
+        </li>
+        <li>
+          <a href="../works.html"><img src="../images/works_header_beige.svg" alt="WORKS" /></a>
+        </li>
+        <li>
+          <a href="contact.html"><img src="../images/contact_home_beige.svg" alt="CONTACT" /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ハンバーガーメニュー -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- ハンバーガーメニュークリック後
+      ナビゲーション表示 -->
+    <nav class="hamburger-nav">
       <ul>
         <li>
           <a href="./index.html"><img src="./images/home_header_beige.svg" alt="HOME" /></a>
@@ -25,14 +53,23 @@
         <li>
           <a href="contact.html"><img src="./images/contact_home_beige.svg" alt="CONTACT" /></a>
         </li>
+        <li>
+          <a href="" alt="instagram">
+            <img src="./images/instagram_icon.png" alt="instagram" class="hamburger-nav-instagram_icon" />
+          </a>
+        </li>
+        <li>
+          <img src="./images/title_footer.svg" alt="title" class="hamburger-nav-title" />
+          <p class="hamburger-nav-title-sub">portfolio</p>
+        </li>
       </ul>
     </nav>
-  </header>
+    <div class="hamburger-nav-back"></div>
 
-  <main>
+    <!-- 作品ページ設定 -->
     <div class="works_page-top">
       <h2 class="works_page-title-container">
-        <img src="./images/works_title.png" alt="WORKS" class="works_page-title" />
+        <img src="../images/works_title.png" alt="WORKS" class="works_page-title" />
         <p class="works_page-title-sub">作品説明</p>
       </h2>
     </div>
@@ -41,14 +78,14 @@
     <div class="breadcrumb-container">
       <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a itemprop="item" href="./index.html">
+          <a itemprop="item" href="../index.html">
             <span itemprop="name">HOME</span>
           </a>
           <meta itemprop="position" content="1" />
         </li>
 
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a itemprop="item" href="./works.html">
+          <a itemprop="item" href="../works.html">
             <span itemprop="name">WORKS</span>
           </a>
           <meta itemprop="position" content="2" />
@@ -69,37 +106,31 @@
         <p class="works-category-title">WEB SITE</p>
         <!-- works作品名 -->
         <p class="works-name">
-          LIFE hair design<br>
+          LIFE hair design<br />
           （自主制作）
         </p>
         <!-- works説明文 -->
         <p class="works-text">
-          10周年を機にウェブサイトをリニューアルとして コーポレートカラーのピンクを基調にお店の雰囲気、 人が感じられるイメージで制作いたしました。
+          10周年を機にウェブサイトをリニューアルとして
+          コーポレートカラーのピンクを基調にお店の雰囲気、
+          人が感じられるイメージで制作いたしました。
         </p>
         <!-- works使用ツールなど -->
         <div class="works-info-container">
           <ul class="works-info-list">
             <li class="works-info-item">
-              <p class="works-info-title">
-                使用ツール
-              </p>
+              <p class="works-info-title">使用ツール</p>
               <p class="works-info-text">
-                Illustrator<br>
+                Illustrator<br />
                 Photoshop
               </p>
             </li>
             <li class="works-info-item">
-              <p class="works-info-title">
-                制作時間
-              </p>
-              <p class="works-info-text">
-                ２週間
-              </p>
+              <p class="works-info-title">制作時間</p>
+              <p class="works-info-text">２週間</p>
             </li>
             <li class="works-info-item">
-              <p class="works-info-title">
-                料金
-              </p>
+              <p class="works-info-title">料金</p>
               <p class="works-info-text">
                 料金についてはボリュームによって変動するためお問い合わせください。
               </p>
@@ -111,28 +142,21 @@
         <div class="works-btn-wrapper">
           <!-- PREV -->
           <div class="prev-btn-container">
-            <a href="" class="prev-btn">
-              PREV
-            </a>
+            <a href="" class="prev-btn"> PREV </a>
           </div>
           <!-- 一覧にもどる -->
-          <a href="./works.html">
-            <p class="back-btn">
-              一覧にもどる
-            </p>
+          <a href="../works.html">
+            <p class="back-btn">一覧にもどる</p>
           </a>
           <!-- NEXT -->
           <div class="next-btn-container">
-            <a href="" class="next-btn">
-              NEXT
-            </a>
+            <a href="" class="next-btn"> NEXT </a>
           </div>
         </div>
       </div>
 
       <!-- works画像 -->
       <div class="works-img-container">
-
         <!-- ➀切り替えボタン -->
         <div class="buttons">
           <!-- ➁ボタン単体 -->
@@ -142,26 +166,23 @@
 
         <!-- ➂切り替え画面 -->
         <div class="screen">
-
           <!-- ➃A画面 -->
           <div class="PC_screen">
-            <img src="./works/website_PC1.jpg" alt="作品画像（PC版）" class="works-img">
+            <img src="../images/works/website_PC1.jpg" alt="作品画像（PC版）" class="works-img" />
           </div>
 
           <!-- ➄B画面 -->
           <div class="SP_screen">
-            <img src="./works/website_PC1_SP.jpg" alt="作品画像（SPSP版）" class="works-img">
+            <img src="../images/works/website_PC1_SP.jpg" alt="作品画像（SPSP版）" class="works-img" />
           </div>
         </div>
-
       </div>
     </div>
-
 
     <!-- CONTACT -->
     <section id="contact">
       <h2 class>
-        <img src="./images/contact_home.svg" alt="CONTACT" class="contact-title" />
+        <img src="../images/contact_home.svg" alt="CONTACT" class="contact-title" />
       </h2>
       <p class="contact-text">
         お仕事のご依頼やご相談などお気軽にお問い合わせください
@@ -177,26 +198,26 @@
   <footer>
     <div class="footer-container">
       <div class="footer-title-container">
-        <img src="./images/title_footer.svg" alt="title" class="footer-title" />
+        <img src="../images/title_footer.svg" alt="title" class="footer-title" />
         <p class="footer-title-sub">portfolio</p>
       </div>
       <nav class="nav">
         <ul>
           <li>
-            <a href="./index.html"><img src="./images/home_header_beige.svg" alt="HOME" /></a>
+            <a href="../index.html"><img src="../images/home_header_beige.svg" alt="HOME" /></a>
           </li>
           <li>
-            <a href="./about.html"><img src="./images/about_header_beige.svg" alt="ABOUT" /></a>
+            <a href="../about.html"><img src="../images/about_header_beige.svg" alt="ABOUT" /></a>
           </li>
           <li>
-            <a href="./works.html"><img src="./images/works_header_beige.svg" alt="WORKS" /></a>
+            <a href="../works.html"><img src="../images/works_header_beige.svg" alt="WORKS" /></a>
           </li>
           <li>
-            <a href="contact.html"><img src="./images/contact_home_beige.svg" alt="CONTACT" /></a>
+            <a href="contact.html"><img src="../images/contact_home_beige.svg" alt="CONTACT" /></a>
           </li>
         </ul>
       </nav>
-      <img src="./images/instagram_icon.png" alt="instagram" class="instagram_icon" />
+      <img src="../images/instagram_icon.png" alt="instagram" class="instagram_icon" />
       <div class="copyright">
         <small>&copy; 2025 Utako portfolio</small>
       </div>
@@ -208,34 +229,13 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+
 </body>
 
 </html>
-
-
-<!-- 不明点
-
-下記の点で躓いてしまいました。
-対応や原因を教えて頂けますと幸いです。よろしくお願いいたします。
-
-・作品の詳細ページ（html）は作品ごとに作成する認識であっていますでしょうか。（htmlの名前の付け方が分からずworks1にしています）
-その場合、詳細ページは別のフォルダを作成し、その中に各作品のhtmlを入れたらいいのでしょうか。 
-今後worksの画像が増えるため、works用の画像フォルダを別で作成したのですが、これは正しいのでしょうか。
-
-・左側の説明のli部分の説明文の開始位置を揃える方法が分かりませんでした。
-.works-info-titleにmargin-rightを付けてみたのですが上手くいかなかったため、方法を教えて頂きたいです。
-
-・ボタンで画面切り替え（PC⇔SP）を行うよう設定していたのですが、非active時のボタンに縁をつけ、
-背景色はなくした状態にしたかったのですが、設定することができませんでした。
-
-・画面切り替えの配置なのですが、画面を囲っているdiv(.screen)にmargin 0 autoを設定しても、中央に寄りませんでした。
-
-・PREVボタンの左矢印の位置が文字と重なってしまったのですが、これはaタグに疑似要素をつけずに、
-spanタブで別に作成した方がいいのでしょうか。
-
-・このページ自体の縦の長さが長くなっており、原因は画像にスクロールをつけているからだと思うのですが原因が分かりません。
-対処法など教えて頂けますと幸いです。
-
--->

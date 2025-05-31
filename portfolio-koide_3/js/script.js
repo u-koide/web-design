@@ -1,3 +1,49 @@
+//====================
+//ハンバーガ―メニュー出現条件
+// ====================
+//スクロールした際の動きを関数でまとめる
+function PageTopAnime() {
+		var scroll = $(window).scrollTop();
+		if (scroll >= 200){//上から200pxスクロールしたら
+			$('.hamburger').removeClass('RightMove');//.hamburgerについているRightMoveというクラス名を除く
+			$('.hamburger').addClass('LeftMove');//.hamburgerについているLeftMoveというクラス名を付与
+		}else{
+			if(
+				$('.hamburger').hasClass('LeftMove')){//すでに.hamburgerにLeftMoveというクラス名がついていたら
+				$('.hamburger').removeClass('LeftMove');//LeftMoveというクラス名を除き
+				$('.hamburger').addClass('RightMove');//RightMoveというクラス名を.hamburgerに付与
+			}
+		}
+}
+
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+});
+
+// ページが読み込まれたらすぐに動かしたい場合の記述
+$(window).on('load', function () {
+	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+});
+
+
+
+//====================
+//ハンバーガ―メニュー,クリック後ナビ出現
+// ====================
+$(".hamburger").click(function () {//ボタンがクリックされたら
+	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+    $(".hamburger-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+    $(".hamburger-nav-back").toggleClass('circleactive');//丸背景にcircleactiveクラスを付与
+});
+
+$(".hamburger-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+    $(".hamburger").removeClass('active');//ボタンの activeクラスを除去し
+    $(".hamburger-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去
+    $(".hamburger-nav-back").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
+});
+
+
 // ====================
 //カテゴリー分け
 // ====================

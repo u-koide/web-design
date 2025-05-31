@@ -7,6 +7,7 @@
   <title>UTAKO portfolio</title>
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/style.css" />
+
 </head>
 
 <body>
@@ -45,6 +46,44 @@
   </header>
 
   <main>
+
+    <!-- ハンバーガーメニュー -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- ハンバーガーメニュークリック後
+      ナビゲーション表示 -->
+    <nav class="hamburger-nav">
+      <ul>
+        <li>
+          <a href="./index.html"><img src="./images/home_header_beige.svg" alt="HOME" /></a>
+        </li>
+        <li>
+          <a href="./about.html"><img src="./images/about_header_beige.svg" alt="ABOUT" /></a>
+        </li>
+        <li>
+          <a href="./works.html"><img src="./images/works_header_beige.svg" alt="WORKS" /></a>
+        </li>
+        <li>
+          <a href="contact.html"><img src="./images/contact_home_beige.svg" alt="CONTACT" /></a>
+        </li>
+        <li>
+          <a href="" alt="instagram">
+            <img src="./images/instagram_icon.png" alt="instagram" class="hamburger-nav-instagram_icon" />
+          </a>
+        </li>
+        <li>
+          <img src="./images/title_footer.svg" alt="title" class="hamburger-nav-title" />
+          <p class="hamburger-nav-title-sub">portfolio</p>
+        </li>
+      </ul>
+    </nav>
+    <div class="hamburger-nav-back"></div>
+
+
     <!-- WORKS -->
     <section id="works">
       <div class="works__inner">
@@ -188,6 +227,24 @@
       </div>
     </div>
   </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+
 </body>
 
 </html>
+
+
+<!-- 不明点など
+・ハンバーガーメニューを作成し、ナビゲーションを出現するようにしたのですが、インスタグラムアイコンとサイトロゴ部分は
+liに入れない方がよいのでしょうか。
+liに入れずに作成を試みたのですが、上手くできず、一旦liに含めています。
+
+・また、上記のliに入れた場合、インスタグラムアイコンとロゴのサイズを変更できなくなってしまいました。
+
+
+-->

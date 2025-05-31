@@ -30,24 +30,64 @@
   </header>
 
   <main>
+
+    <!-- ハンバーガーメニュー -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- ハンバーガーメニュークリック後
+      ナビゲーション表示 -->
+    <nav class="hamburger-nav">
+      <ul>
+        <li>
+          <a href="./index.html"><img src="./images/home_header_beige.svg" alt="HOME" /></a>
+        </li>
+        <li>
+          <a href="./about.html"><img src="./images/about_header_beige.svg" alt="ABOUT" /></a>
+        </li>
+        <li>
+          <a href="./works.html"><img src="./images/works_header_beige.svg" alt="WORKS" /></a>
+        </li>
+        <li>
+          <a href="contact.html"><img src="./images/contact_home_beige.svg" alt="CONTACT" /></a>
+        </li>
+        <li>
+          <a href="" alt="instagram">
+            <img src="./images/instagram_icon.png" alt="instagram" class="hamburger-nav-instagram_icon" />
+          </a>
+        </li>
+        <li>
+          <img src="./images/title_footer.svg" alt="title" class="hamburger-nav-title" />
+          <p class="hamburger-nav-title-sub">portfolio</p>
+        </li>
+      </ul>
+    </nav>
+    <div class="hamburger-nav-back"></div>
+
+
     <!-- ABOUT -->
     <section class="about-container">
-      <h2 class="about_page-title-container">
-        <img src="./images/about_titie.png" alt="ABOUT" class="about_page-title" />
-        <p class="about_page-title-sub">私について</p>
-      </h2>
-      <div class="about-column">
-        <img src="./images/about_photo.png" alt="プロフィール写真" class="about-photo" />
-        <div class="about_page-text-container">
-          <p class="about_page-text-name">Utako</p>
-          <p class="about_page-text">
-            1991年生まれ、福岡県在住。現役薬剤師。<br />
-            小さい頃から好きだったものづくりをやりたくて、オンラインスクールでWEBデザインを学びました。
-            落ち着いた雰囲気のなかに、少しの遊びゴコロを加えたようなデザインが好きです。
-          </p>
-          <a href="">
-            <img src="./images/instagram_green.png" alt="instagram_icon" class="instagram_icon-green" />
-          </a>
+      <div class="about-inner">
+        <h2 class="about_page-title-container">
+          <img src="./images/about_titie.png" alt="ABOUT" class="about_page-title" />
+          <p class="about_page-title-sub">私について</p>
+        </h2>
+        <div class="about-column">
+          <img src="./images/about_photo.png" alt="プロフィール写真" class="about-photo" />
+          <div class="about_page-text-container">
+            <p class="about_page-text-name">Utako</p>
+            <p class="about_page-text">
+              1991年生まれ、福岡県在住。現役薬剤師。<br />
+              小さい頃から好きだったものづくりをやりたくて、オンラインスクールでWEBデザインを学びました。
+              落ち着いた雰囲気のなかに、少しの遊びゴコロを加えたようなデザインが好きです。
+            </p>
+            <a href="">
+              <img src="./images/instagram_green.png" alt="instagram_icon" class="instagram_icon-green" />
+            </a>
+          </div>
         </div>
       </div>
       <div class="about-container-bottom"></div>
@@ -138,6 +178,11 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+
 </body>
 
 </html>
