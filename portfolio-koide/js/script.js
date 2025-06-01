@@ -4,7 +4,7 @@
 //スクロールした際の動きを関数でまとめる
 function PageTopAnime() {
 		var scroll = $(window).scrollTop();
-		if (scroll >= 200){//上から200pxスクロールしたら
+		if (scroll >= 250){//上から200pxスクロールしたら
 			$('.hamburger').removeClass('RightMove');//.hamburgerについているRightMoveというクラス名を除く
 			$('.hamburger').addClass('LeftMove');//.hamburgerについているLeftMoveというクラス名を付与
 		}else{
@@ -26,8 +26,6 @@ $(window).on('load', function () {
 	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
 });
 
-
-
 //====================
 //ハンバーガ―メニュー,クリック後ナビ出現
 // ====================
@@ -42,6 +40,41 @@ $(".hamburger-nav a").click(function () {//ナビゲーションのリンクが�
     $(".hamburger-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去
     $(".hamburger-nav-back").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
 });
+
+
+
+//====================
+//スムーススクロール
+// ====================
+// #page-topをクリックした際の設定
+$('.to-top-container').click(function () {
+    $('body,html').animate({
+        scrollTop: 0//ページトップまでスクロール
+    }, 1000);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false;//リンク自体の無効化
+});
+
+
+// ====================
+// ホバー時、丸拡大
+// ====================
+// ナビゲーション 
+// HOME　WORKS　MOREボタン
+const buttonElement = document.querySelectorAll(".nav-li");
+const buttonBgElement = buttonElement?.querySelector(".bg");
+
+const handleMouseEnterLeave = (event) => {
+  if (!buttonElement || !buttonBgElement) {
+    return;
+  }
+  const mouseTop = event.offsetY;
+  const mouseLeft = event.offsetX;
+  buttonBgElement.style.translate = `${mouseLeft}px ${mouseTop}px`;
+};
+
+buttonElement?.addEventListener("mouseenter", handleMouseEnterLeave);
+buttonElement?.addEventListener("mouseleave", handleMouseEnterLeave);
+
 
 
 // ====================

@@ -13,18 +13,18 @@
 <body>
   <header id="home">
     <nav class="nav">
-      <ul>
-        <li>
-          <a href="./index.html"><img src="./images/home_header_beige.svg" alt="HOME" /></a>
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <a href="./index.html"><img src="./images/home_header_beige.svg" alt="HOME" /><span class="bg"></span></a>
         </li>
-        <li>
-          <a href="./about.html"><img src="./images/about_header_beige.svg" alt="ABOUT" /></a>
+        <li class="nav-li">
+          <a href="./about.html"><img src="./images/about_header_beige.svg" alt="ABOUT" /><span class="bg"></span></a>
         </li>
-        <li>
-          <a href="./works.html"><img src="./images/works_header_beige.svg" alt="WORKS" /></a>
+        <li class="nav-li">
+          <a href="./works.html"><img src="./images/works_header_beige.svg" alt="WORKS" /><span class="bg"></span></a>
         </li>
-        <li>
-          <a href="contact.html"><img src="./images/contact_home_beige.svg" alt="CONTACT" /></a>
+        <li class="nav-li">
+          <a href="contact.html"><img src="./images/contact_home_beige.svg" alt="CONTACT" /><span class="bg"></span></a>
         </li>
       </ul>
     </nav>
@@ -93,24 +93,32 @@
         </h2>
         <ul class="works-contents-container">
           <li class="works-contents">
-            <p class="works-contents-category">web site</p>
-            <img src="./images/works_website_1.png" alt="works1" class="works-contents-item" />
-            <p class="works-contents-title">あああ</p>
+            <a href="./works/works1.html">
+              <p class="works-contents-category">web site</p>
+              <img src="./images/works_website_1.png" alt="works1" class="works-contents-item" />
+              <p class="works-contents-title">LIFE hair design（自主制作）</p>
+            </a>
           </li>
           <li class="works-contents">
-            <p class="works-contents-category">web site</p>
-            <img src="./images/works_banner_1.png" alt="works2" class="works-contents-item" />
-            <p class="works-contents-title">あああ</p>
+            <a href="./works/works2.html">
+              <p class="works-contents-category">banner</p>
+              <img src="./images/works_banner_1.png" alt="works2" class="works-contents-item" />
+              <p class="works-contents-title">デラックスバーガー（自主制作）</p>
+            </a>
           </li>
           <li class="works-contents">
-            <p class="works-contents-category">web site</p>
-            <img src="./images/works_website_2.png" alt="works3" class="works-contents-item" />
-            <p class="works-contents-title">あああ</p>
+            <a href="./works/works3.html">
+              <p class="works-contents-category">web site</p>
+              <img src="./images/works_website_2.png" alt="works3" class="works-contents-item" />
+              <p class="works-contents-title">WORKERS（自主制作）</p>
+            </a>
           </li>
         </ul>
-        <a href="./works.html">
-          <p class="works-btn-more">View More</p>
-        </a>
+        <div class="works-btn-more-container">
+          <a href="./works.html">
+            <p class="works-btn-more">View More<span class="bg"></span></p>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -161,6 +169,7 @@
           <p class="about-title-sub">私について</p>
         </h2>
         <img src="./images/home_about_back_img.png" class="about-back-beige" />
+        <img src="./images/sp-home_about_back_img.png" class="sp-about-back-beige" />
         <div class="about-text-container">
           <div class="about-text-name-container">
             <p class="about-text-name">Utako</p>
@@ -170,11 +179,15 @@
             1991年生まれ、福岡県在住。<br />
             落ち着いた雰囲気のなかに、少しの遊びゴコロを加えたようなデザインが好きです。想いを形にするお手伝いができれば嬉しいです。
           </p>
+          <a href="./about.html">
+            <p class="about-btn-more">View More</p>
+          </a>
         </div>
         <img src="./images/home_about_backshadow_img.png" class="about-back-shadow" />
-        <a href="./about.html">
+        <!-- <a href="./about.html">
           <p class="about-btn-more">View More</p>
-        </a>
+        </a> -->
+
       </div>
     </section>
 
@@ -201,18 +214,19 @@
         <p class="footer-title-sub">portfolio</p>
       </div>
       <nav class="nav">
-        <ul>
-          <li>
-            <a href="./index.html"><img src="./images/home_header_beige.svg" alt="HOME" /></a>
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a href="./index.html"><img src="./images/home_header_beige.svg" alt="HOME" /><span class="bg"></span></a>
           </li>
-          <li>
-            <a href="./about.html"><img src="./images/about_header_beige.svg" alt="ABOUT" /></a>
+          <li class="nav-li">
+            <a href="./about.html"><img src="./images/about_header_beige.svg" alt="ABOUT" /><span class="bg"></span></a>
           </li>
-          <li>
-            <a href="./works.html"><img src="./images/works_header_beige.svg" alt="WORKS" /></a>
+          <li class="nav-li">
+            <a href="./works.html"><img src="./images/works_header_beige.svg" alt="WORKS" /><span class="bg"></span></a>
           </li>
-          <li>
-            <a href="contact.html"><img src="./images/contact_home_beige.svg" alt="CONTACT" /></a>
+          <li class="nav-li">
+            <a href="contact.html"><img src="./images/contact_home_beige.svg" alt="CONTACT" /><span
+                class="bg"></span></a>
           </li>
         </ul>
       </nav>
@@ -228,36 +242,9 @@
     </div>
   </footer>
 
-
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="./js/script.js"></script>
 
 </body>
 
 </html>
-
-
-<!-- 不明点など
-変更点：FVの配置の設定を少し変えてみました。paddingで調整していたのですが、サイズを変えると崩れていたため。
-
-・CSSにて@media screenの記述をする際、
-@media screen and (max-width: ******px) {}内に、同時に変更するセレクタをまとめて記載した方がいいのでしょうか。
-今回何を変えるか手探りできめてしまったため、各セレクタにそれぞれ@media screenの記述を記載してしましました。
-
-・セクション「ABOUT」の影の位置について
-レスポンシブの際もposition: absolute;を追加したのですが、位置の調整が出来ず上手く設定することができませんでした。
-
-・また、ABOUTの箇所だけどうしても上手くいきませんでした。
-背景の表示角度を変えたのですが、角度を付けたことでwidthで幅の設定がしづらくなってしまいました。
-
-
-・ハンバーガーメニューを作成し、ナビゲーションを出現するようにしたのですが、インスタグラムアイコンとサイトロゴ部分は
-liに入れない方がよいのでしょうか。
-liに入れずに作成を試みたのですが、上手くできず、一旦liに含めています。
-
-・また、上記のliに入れた場合、インスタグラムアイコンとロゴのサイズを変更できなくなってしまいました。
-
-
--->

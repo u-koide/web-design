@@ -12,18 +12,18 @@
 <body>
   <header id="home">
     <nav class="nav">
-      <ul>
-        <li>
-          <a href="./index.html"><img src="./images/home_header_beige.svg" alt="HOME" /></a>
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <a href="./index.html"><img src="./images/home_header_beige.svg" alt="HOME" /><span class="bg"></span></a>
         </li>
-        <li>
-          <a href="./about.html"><img src="./images/about_header_beige.svg" alt="ABOUT" /></a>
+        <li class="nav-li">
+          <a href="./about.html"><img src="./images/about_header_beige.svg" alt="ABOUT" /><span class="bg"></span></a>
         </li>
-        <li>
-          <a href="./works.html"><img src="./images/works_header_beige.svg" alt="WORKS" /></a>
+        <li class="nav-li">
+          <a href="./works.html"><img src="./images/works_header_beige.svg" alt="WORKS" /><span class="bg"></span></a>
         </li>
-        <li>
-          <a href="contact.html"><img src="./images/contact_home_beige.svg" alt="CONTACT" /></a>
+        <li class="nav-li">
+          <a href="contact.html"><img src="./images/contact_home_beige.svg" alt="CONTACT" /><span class="bg"></span></a>
         </li>
       </ul>
     </nav>
@@ -86,34 +86,35 @@
       </div>
 
       <!-- 問い合わせフォーム部分 -->
-      <form action="https://docs.google.com/forms/u/0/d/1FEnV577JLeNzdPu31iLBpBI9mJR5oymawI8OgrGxUfE/previewResponse"
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfzosIIqM1sJ-YdMP2WWA4_p6GvqNa9cohTCHTGofCcS2kxPw/formResponse"
         method="post" target="hidden_iframe" onsubmit="submitted=true;">
         <div class="contact-form-container">
           <div class="contact-form-inner">
-
             <div class="required">
-              <label>お名前</label>
+              <label for="name-id">お名前</label>
             </div>
-            <input id="name-id" type="text" name="entry.82774481">
+            <input id="name-id" type="text" name="entry.82774481" required="required">
 
             <div class="optional">
-              <label>会社名</label>
+              <label for="company-name">会社名</label>
             </div>
             <input id="company-name" type="text" name="entry.84553545">
 
             <div class="required">
-              <label>メールアドレス</label>
+              <label for="mail-adress-id">メールアドレス</label>
             </div>
-            <input id="mail-adress-id" type="email" name="entry.1883198542">
+            <input id="mail-adress-id" type="email" name="entry.1883198542" required="required">
 
             <div class="required">
-              <label>お問い合わせ内容</label>
+              <label for="message-id">お問い合わせ内容</label>
             </div>
-            <textarea name="entry.815555053"></textarea>
+            <textarea id="message-id" name="entry.815555053" required="required"></textarea>
 
-            <p class="privacy-policy">
+
+            <!-- <p class="privacy-policy">
               個人情報の取り扱いについては、プライバシーポリシーをご確認ください。
-            </p>
+            </p> -->
 
             <p class="send-btn">
               <input type="submit" value="送信する">
@@ -138,18 +139,19 @@
         <p class="footer-title-sub">portfolio</p>
       </div>
       <nav class="nav">
-        <ul>
-          <li>
-            <a href="./index.html"><img src="./images/home_header_beige.svg" alt="HOME" /></a>
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a href="./index.html"><img src="./images/home_header_beige.svg" alt="HOME" /><span class="bg"></span></a>
           </li>
-          <li>
-            <a href="./about.html"><img src="./images/about_header_beige.svg" alt="ABOUT" /></a>
+          <li class="nav-li">
+            <a href="./about.html"><img src="./images/about_header_beige.svg" alt="ABOUT" /><span class="bg"></span></a>
           </li>
-          <li>
-            <a href="./works.html"><img src="./images/works_header_beige.svg" alt="WORKS" /></a>
+          <li class="nav-li">
+            <a href="./works.html"><img src="./images/works_header_beige.svg" alt="WORKS" /><span class="bg"></span></a>
           </li>
-          <li>
-            <a href="contact.html"><img src="./images/contact_home_beige.svg" alt="CONTACT" /></a>
+          <li class="nav-li">
+            <a href="contact.html"><img src="./images/contact_home_beige.svg" alt="CONTACT" /><span
+                class="bg"></span></a>
           </li>
         </ul>
       </nav>
@@ -163,23 +165,10 @@
         </a>
       </div>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
   </footer>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="./js/script.js"></script>
 
 </body>
 
 </html>
-
-
-<!--質問
-・contactにグーグルフォームを連携させるように設定したのですが、試しに送信したところ
-グーグルフォームの管理画面では受信を確認できませんでした。
-グーグルフォームURL
-https://docs.google.com/forms/d/1FEnV577JLeNzdPu31iLBpBI9mJR5oymawI8OgrGxUfE/edit
--->

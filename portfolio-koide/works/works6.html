@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UTAKO portfolio-works-LIFE hair design</title>
+  <title>UTAKO portfolio-works-DESIGN CAFE</title>
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/style.css" />
 </head>
@@ -94,7 +94,7 @@
 
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a itemprop="item" href="#home">
-            <span itemprop="name">LIFE hair design（自主制作）</span><!-- ===作品名記載=== -->
+            <span itemprop="name">DESIGN CAFE（自主制作）</span><!-- ===作品名記載=== -->
           </a>
           <meta itemprop="position" content="3" />
         </li>
@@ -107,14 +107,13 @@
         <p class="works-category-title">WEB SITE</p>
         <!-- works作品名 -->
         <p class="works-name">
-          LIFE hair design<br />
+          DESIGN CAFE<br />
           （自主制作）
         </p>
         <!-- works説明文 -->
         <p class="works-text">
-          10周年を機にウェブサイトをリニューアルとして
-          コーポレートカラーのピンクを基調にお店の雰囲気、
-          人が感じられるイメージで制作いたしました。
+          デザインカンプをもとにPC版とSP版のWEBサイトのコーディングを行いました。
+          jQueryを用いて、メインビジュアルやギャラリーのスライダー、スマホ版のハンバーガーメニューに動きを実装しています。
         </p>
         <!-- works使用ツールなど -->
         <div class="works-info-container">
@@ -122,13 +121,14 @@
             <li class="works-info-item">
               <p class="works-info-title">使用ツール</p>
               <p class="works-info-text">
-                Illustrator<br />
-                Photoshop
+                HTML<br>
+                CSS<br>
+                jQuery
               </p>
             </li>
             <li class="works-info-item">
               <p class="works-info-title">制作時間</p>
-              <p class="works-info-text">２週間</p>
+              <p class="works-info-text">2週間</p>
             </li>
             <li class="works-info-item">
               <p class="works-info-title">料金</p>
@@ -143,7 +143,7 @@
         <div class="works-btn-wrapper">
           <!-- PREV -->
           <div class="prev-btn-container">
-            <a href="" class="prev-btn"> PREV </a><!-- 1ページ目なのでPREV反応なし -->
+            <a href="./works5.html" class="prev-btn"> PREV </a>
           </div>
           <!-- 一覧にもどる -->
           <a href="../works.html">
@@ -151,7 +151,7 @@
           </a>
           <!-- NEXT -->
           <div class="next-btn-container">
-            <a href="./works2.html" class="next-btn"> NEXT </a>
+            <a href="" class="next-btn"> NEXT </a><!-- 現在最後のページであるためNEXTなし -->
           </div>
         </div>
       </div>
@@ -161,22 +161,20 @@
         <!-- ➀切り替えボタン -->
         <div class="buttons">
           <!-- ➁ボタン単体 -->
-          <!-- PCボタン -->
           <button class="button" id="PC_btn">PC</button>
-          <!-- SPボタン -->
-          <!-- <button class="button" id="SP_btn">SP</button> -->
+          <button class="button" id="SP_btn">SP</button>
         </div>
 
         <!-- ➂切り替え画面 -->
         <div class="screen">
           <!-- ➃A画面 -->
           <div class="PC_screen">
-            <img src="../images/works/website_PC2.jpg" alt="作品画像（PC版）" class="works-img" />
+            <img src="../images/works/designcafe-PC.jpg" alt="作品画像（PC版）" class="works-img" />
           </div>
 
           <!-- ➄B画面 -->
           <div class="SP_screen">
-            <img src="../images/works/website_PC1_SP.jpg" alt="作品画像（SPSP版）" class="works-img" />
+            <img src="../images/works/designcafe-SP.jpg" alt="作品画像（SPSP版）" class="works-img" />
           </div>
         </div>
       </div>
@@ -237,6 +235,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="./js/script.js"></script>
+
 
 </body>
 
