@@ -5,7 +5,7 @@ body {
 }
 
 p {
-  font-family: "Yu Gothic";
+  font-family: fot-tsukuardgothic-std, sans-serif;
 }
 
 
@@ -96,8 +96,7 @@ p {
 .main-visual-container-beige {
   background-color: #e6dfcb;
   border-radius: 0 9999px 9999px 0;
-  /* padding: 170px 20%; */
-  width: 700px;
+  width: 70%;
   height: 470px;/* 背景の影とサイズを合わせるため設定 */
   position: absolute;
   z-index: 1;
@@ -191,7 +190,7 @@ opacity:0;
 
 
 .title-shadow {
-  width: auto;
+  width: 100%;
   height: 467px;
   position: absolute;
   right: 0;
@@ -612,6 +611,7 @@ opacity: 1;
 
 .works-contents-title {
   color: #e6dfcb;
+  font-family: fot-tsukuardgothic-std, sans-serif;
   font-size: 14px;
   margin-top: -15%;
   margin-left: 10%;
