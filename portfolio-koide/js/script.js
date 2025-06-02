@@ -41,42 +41,6 @@ $(".hamburger-nav a").click(function () {//ナビゲーションのリンクが�
     $(".hamburger-nav-back").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
 });
 
-
-
-//====================
-//スムーススクロール
-// ====================
-// #page-topをクリックした際の設定
-$('.to-top-container').click(function () {
-    $('body,html').animate({
-        scrollTop: 0//ページトップまでスクロール
-    }, 1000);//ページトップスクロールの速さ。数字が大きいほど遅くなる
-    return false;//リンク自体の無効化
-});
-
-
-// ====================
-// ホバー時、丸拡大
-// ====================
-// ナビゲーション 
-// HOME　WORKS　MOREボタン
-const buttonElement = document.querySelectorAll(".nav-li");
-const buttonBgElement = buttonElement?.querySelector(".bg");
-
-const handleMouseEnterLeave = (event) => {
-  if (!buttonElement || !buttonBgElement) {
-    return;
-  }
-  const mouseTop = event.offsetY;
-  const mouseLeft = event.offsetX;
-  buttonBgElement.style.translate = `${mouseLeft}px ${mouseTop}px`;
-};
-
-buttonElement?.addEventListener("mouseenter", handleMouseEnterLeave);
-buttonElement?.addEventListener("mouseleave", handleMouseEnterLeave);
-
-
-
 // ====================
 //カテゴリー分け
 // ====================
@@ -118,6 +82,42 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+//====================
+//スムーススクロール
+// ====================
+// #page-topをクリックした際の設定
+$('.to-top-container').click(function () {
+    $('body,html').animate({
+        scrollTop: 0//ページトップまでスクロール
+    }, 1000);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false;//リンク自体の無効化
+});
+
+
+// ====================
+// ホバー時、丸拡大
+// ====================
+// ナビゲーション 
+// HOME　WORKS　MOREボタン
+const buttonElement = document.querySelectorAll(".nav-li");
+const buttonBgElement = buttonElement?.querySelector(".bg");
+
+const handleMouseEnterLeave = (event) => {
+  if (!buttonElement || !buttonBgElement) {
+    return;
+  }
+  const mouseTop = event.offsetY;
+  const mouseLeft = event.offsetX;
+  buttonBgElement.style.translate = `${mouseLeft}px ${mouseTop}px`;
+};
+
+buttonElement?.addEventListener("mouseenter", handleMouseEnterLeave);
+buttonElement?.addEventListener("mouseleave", handleMouseEnterLeave);
+
+
+
+
 
 // ====================
 //WORKS　PC・SP切り替えボタン
