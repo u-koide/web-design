@@ -1950,6 +1950,7 @@ button {
   background-color: #3d563e; /* 背景色 */
   font-weight: bold;
   font-family: "Noto Sans JP", sans-serif;
+  cursor : pointer;
 }
 
 /* Aボタン active */
@@ -1965,6 +1966,7 @@ button {
   background-color: #e6dfcb; /* 文字色*/
   font-weight: bold;
   font-family: "Noto Sans JP", sans-serif;
+  cursor : pointer;
 }
 
 /* Bボタン active */
@@ -2114,6 +2116,13 @@ input[type="email"] {
   box-sizing: border-box;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border:2px solid #3d563e;
+}
+
 textarea {
   background-color: #cccac2;
   color: #3d563e;
@@ -2127,6 +2136,7 @@ textarea {
   margin: 10px 0 50px;
   padding: 15px 20px;
   box-sizing: border-box;
+  scrollbar-color: #3d563e #e6dfcb;
 }
 
 label {
@@ -2174,14 +2184,14 @@ label {
   margin-left: 10px;
 }
 
-/* プライバシーポリシーコメント */
+/* プライバシーポリシーコメント
 .privacy-policy {
   color: #3d563e;
   font-family: "Yu Gothic";
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 50px;
-}
+} */
 
 /* 送信ボタン */
 .send-btn {

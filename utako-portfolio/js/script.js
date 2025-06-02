@@ -26,6 +26,7 @@ $(window).on('load', function () {
 	PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
 });
 
+
 //====================
 //ハンバーガ―メニュー,クリック後ナビ出現
 // ====================
@@ -40,6 +41,9 @@ $(".hamburger-nav a").click(function () {//ナビゲーションのリンクが�
     $(".hamburger-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去
     $(".hamburger-nav-back").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
 });
+
+
+
 
 // ====================
 //カテゴリー分け
@@ -83,40 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//====================
-//スムーススクロール
-// ====================
-// #page-topをクリックした際の設定
-$('.to-top-container').click(function () {
-    $('body,html').animate({
-        scrollTop: 0//ページトップまでスクロール
-    }, 1000);//ページトップスクロールの速さ。数字が大きいほど遅くなる
-    return false;//リンク自体の無効化
-});
-
-
-// ====================
-// ホバー時、丸拡大
-// ====================
-// ナビゲーション 
-// HOME　WORKS　MOREボタン
-const buttonElement = document.querySelectorAll(".nav-li");
-const buttonBgElement = buttonElement?.querySelector(".bg");
-
-const handleMouseEnterLeave = (event) => {
-  if (!buttonElement || !buttonBgElement) {
-    return;
-  }
-  const mouseTop = event.offsetY;
-  const mouseLeft = event.offsetX;
-  buttonBgElement.style.translate = `${mouseLeft}px ${mouseTop}px`;
-};
-
-buttonElement?.addEventListener("mouseenter", handleMouseEnterLeave);
-buttonElement?.addEventListener("mouseleave", handleMouseEnterLeave);
-
-
-
 
 
 // ====================
@@ -159,4 +129,38 @@ buttonB.addEventListener('click',function(){   // Bボタンをクリックし�
     buttonB.classList.add('active');           // 'buttonB' に 'active' が追加される
     screenA.classList.add('active');           // 'screenA' に 'active' が追加される
     screenB.classList.add('active');           // 'screenB' に 'active' が追加される
+});
+
+
+
+// ====================
+// ホバー時、丸拡大
+// ====================
+// ナビゲーション 
+// HOME　WORKS　MOREボタン
+const buttonElement = document.querySelectorAll(".nav-li");
+const buttonBgElement = buttonElement?.querySelector(".bg");
+
+const handleMouseEnterLeave = (event) => {
+  if (!buttonElement || !buttonBgElement) {
+    return;
+  }
+  const mouseTop = event.offsetY;
+  const mouseLeft = event.offsetX;
+  buttonBgElement.style.translate = `${mouseLeft}px ${mouseTop}px`;
+};
+
+buttonElement?.addEventListener("mouseenter", handleMouseEnterLeave);
+buttonElement?.addEventListener("mouseleave", handleMouseEnterLeave);
+
+
+//====================
+//スムーススクロール
+// ====================
+// #page-topをクリックした際の設定
+$('.to-top-container').click(function () {
+    $('body,html').animate({
+        scrollTop: 0//ページトップまでスクロール
+    }, 1000);//ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false;//リンク自体の無効化
 });
