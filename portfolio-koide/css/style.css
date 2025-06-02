@@ -1477,7 +1477,7 @@ LIKES内
 @media screen and (max-width: 768px) {
   .likes-icon-1,
   .likes-icon-2{
-  display: none;
+  opacity: 0;
 }
 }
 
