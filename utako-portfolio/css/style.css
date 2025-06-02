@@ -1011,23 +1011,6 @@ opacity: 1;
     }
 }
 
-/* .about-btn-more{
-  --button-bg-color: #5c805d;
-  --button-text-color: #e6dfcb;
-  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
-  overflow: hidden;
-  color: var(--button-text-color);
-  border: 1px solid var(--button-bg-color);
-  @media (any-hover: hover) {
-    transition: color 0.5s var(--ease-out-quart);
-    &:hover {
-      --button-text-color: #e6dfcb;
-      .bg {
-        scale: 1;
-      }
-} 
-}
-} */
 
 /* CONTACT */
 #contact {
@@ -1536,7 +1519,7 @@ button {
 .works_page-title-container {
   max-width: 1000px;
   margin: 100px auto 0;
-  padding: 16px;
+  padding-left: 16px;
 }
 
 .works_page-title {
