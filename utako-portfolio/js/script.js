@@ -1,3 +1,47 @@
+// ====================
+//カテゴリー分け
+// ====================
+document.addEventListener("DOMContentLoaded", () => {
+  const categoryButtons = document.querySelectorAll(".category-btn");
+  const items = document.querySelectorAll(".item");
+
+  const showAllItems = () => {
+    items.forEach((item) => {
+      item.style.display = "block";
+      setTimeout(() => {
+        item.classList.add("show");
+      }, 10);
+    });
+  };
+
+  showAllItems();
+
+  categoryButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const category = button.getAttribute("data-category");
+      items.forEach((item) => {
+        item.classList.remove("show");
+        item.style.display = "none";
+      });
+      setTimeout(() => {
+        items.forEach((item) => {
+          if (
+            category === "all" ||
+            item.getAttribute("data-category") === category
+          ) {
+            item.style.display = "block";
+            setTimeout(() => {
+              item.classList.add("show");
+            }, 10);
+          }
+        });
+      }, 10);
+    });
+  });
+});
+
+
+
 //====================
 //ハンバーガ―メニュー出現条件
 // ====================
@@ -45,53 +89,15 @@ $(".hamburger-nav a").click(function () {//ナビゲーションのリンクが�
 
 
 
-// ====================
-//カテゴリー分け
-// ====================
-document.addEventListener("DOMContentLoaded", () => {
-  const categoryButtons = document.querySelectorAll(".category-btn");
-  const items = document.querySelectorAll(".item");
-
-  const showAllItems = () => {
-    items.forEach((item) => {
-      item.style.display = "block";
-      setTimeout(() => {
-        item.classList.add("show");
-      }, 10);
-    });
-  };
-
-  showAllItems();
-
-  categoryButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const category = button.getAttribute("data-category");
-      items.forEach((item) => {
-        item.classList.remove("show");
-        item.style.display = "none";
-      });
-      setTimeout(() => {
-        items.forEach((item) => {
-          if (
-            category === "all" ||
-            item.getAttribute("data-category") === category
-          ) {
-            item.style.display = "block";
-            setTimeout(() => {
-              item.classList.add("show");
-            }, 10);
-          }
-        });
-      }, 10);
-    });
-  });
-});
 
 
 
 // ====================
 //WORKS　PC・SP切り替えボタン
 // ====================
+
+
+if(document.URL.match(/works/)){
 // Aボタン
 const buttonA = document.getElementById('PC_btn');
 
@@ -108,9 +114,11 @@ buttonB.addEventListener('click',function(){   // Bボタンをクリックし�
     buttonB.classList.add('active');           // 'buttonB' に 'active' が追加される
 });
 
+
 // ====================
 //WORKS　PC・SP　画面切り替え
 // ====================
+
 // A画面
 const screenA = document.querySelector('.PC_screen');
 
@@ -130,28 +138,27 @@ buttonB.addEventListener('click',function(){   // Bボタンをクリックし�
     screenA.classList.add('active');           // 'screenA' に 'active' が追加される
     screenB.classList.add('active');           // 'screenB' に 'active' が追加される
 });
+}
 
+// // ====================
+// // ホバー時、丸拡大
+// // ====================
+// // ナビゲーション 
+// // HOME　WORKS　MOREボタン
+// const buttonElement = document.querySelectorAll(".nav-li");
+// const buttonBgElement = buttonElement?.querySelector(".bg");
 
+// const handleMouseEnterLeave = (event) => {
+//   if (!buttonElement || !buttonBgElement) {
+//     return;
+//   }
+//   const mouseTop = event.offsetY;
+//   const mouseLeft = event.offsetX;
+//   buttonBgElement.style.translate = `${mouseLeft}px ${mouseTop}px`;
+// };
 
-// ====================
-// ホバー時、丸拡大
-// ====================
-// ナビゲーション 
-// HOME　WORKS　MOREボタン
-const buttonElement = document.querySelectorAll(".nav-li");
-const buttonBgElement = buttonElement?.querySelector(".bg");
-
-const handleMouseEnterLeave = (event) => {
-  if (!buttonElement || !buttonBgElement) {
-    return;
-  }
-  const mouseTop = event.offsetY;
-  const mouseLeft = event.offsetX;
-  buttonBgElement.style.translate = `${mouseLeft}px ${mouseTop}px`;
-};
-
-buttonElement?.addEventListener("mouseenter", handleMouseEnterLeave);
-buttonElement?.addEventListener("mouseleave", handleMouseEnterLeave);
+// buttonElement?.addEventListener("mouseenter", handleMouseEnterLeave);
+// buttonElement?.addEventListener("mouseleave", handleMouseEnterLeave);
 
 
 //====================
@@ -164,3 +171,4 @@ $('.to-top-container').click(function () {
     }, 1000);//ページトップスクロールの速さ。数字が大きいほど遅くなる
     return false;//リンク自体の無効化
 });
+
